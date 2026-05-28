@@ -126,7 +126,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.546875,
+        "zoomFactor": 0.5653158055126306,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -138,14 +138,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 6,
-          "height": 375,
+          "height": 112,
           "keepRatio": true,
           "layer": "",
           "name": "Blob",
           "persistentUuid": "87815a1a-8232-424b-b524-7d0d36c262b7",
-          "width": 375,
-          "x": 632,
-          "y": 192,
+          "width": 125,
+          "x": 947,
+          "y": 528,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -160,7 +160,43 @@
           "persistentUuid": "fa04b0e0-8150-477c-a26a-03061700f6ba",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "size",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "colorId",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "name": "speed",
+              "type": "string",
+              "value": "\"fast\""
+            },
+            {
+              "name": "direction",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "directionSpeed",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "angle",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "nextChange",
+              "type": "number",
+              "value": 0
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -224,7 +260,83 @@
           }
         ]
       },
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Blob",
+                "direction",
+                "=",
+                "Random(360)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "Blob",
+                "\"WanderTimer\n\"",
+                ">",
+                "Blob.Variable(nextChange)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "Blob",
+                "\"WanderTimer\n\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ClearForces"
+              },
+              "parameters": [
+                "Blob"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "AddForceAL"
+              },
+              "parameters": [
+                "Blob",
+                "Blob.Variable(angle)",
+                "Blob.Variable(directionSpeed)",
+                "1"
+              ]
+            }
+          ]
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 200,
