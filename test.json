@@ -86,6 +86,14 @@
         "name": "NewSprite3",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite4",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -118,7 +126,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6040838749988865,
+        "zoomFactor": 0.546875,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -128,67 +136,17 @@
       "instances": [
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 6,
+          "height": 375,
           "keepRatio": true,
           "layer": "",
-<<<<<<< Updated upstream
-=======
-          "name": "Blob",
-          "persistentUuid": "c69f0c82-670c-4f92-b543-dee1893cd1af",
-          "width": 0,
-          "x": 530,
-          "y": 160,
+          "name": "Pink_Blob",
+          "persistentUuid": "87815a1a-8232-424b-b524-7d0d36c262b7",
+          "width": 375,
+          "x": 632,
+          "y": 192,
           "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Blob",
-          "persistentUuid": "fea2a32e-96f4-496d-8d16-3db5546fb221",
-          "width": 0,
-          "x": 610,
-          "y": 254,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
->>>>>>> Stashed changes
-          "name": "NewSprite2",
-          "persistentUuid": "e5e9b630-0726-4a44-8da6-9a9f309b2771",
-          "width": 0,
-          "x": 1026,
-          "y": 245,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "NewSprite3",
-          "persistentUuid": "b652524e-2946-48da-9fd7-c391c6f11b28",
-          "width": 0,
-          "x": 422,
-          "y": 365,
-          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -198,73 +156,8 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-<<<<<<< Updated upstream
-=======
-          "name": "Blob",
-          "persistentUuid": "388dbe79-e1b9-4ae9-a563-c392dc1cbbbf",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 21,
-                            "y": 20
-                          },
-                          {
-                            "x": 40,
-                            "y": 20
-                          },
-                          {
-                            "x": 40,
-                            "y": 32
-                          },
-                          {
-                            "x": 21,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
->>>>>>> Stashed changes
-          "name": "NewSprite2",
-          "persistentUuid": "8eb7c13f-1c05-4ccf-93ed-d6abdf28d824",
+          "name": "Pink_Blob",
+          "persistentUuid": "fa04b0e0-8150-477c-a26a-03061700f6ba",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -282,7 +175,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite2",
+                      "image": "NewSprite4",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -298,20 +191,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 24,
-                            "y": 25
+                            "x": 21,
+                            "y": 15
                           },
                           {
-                            "x": 48,
-                            "y": 25
+                            "x": 59,
+                            "y": 15
                           },
                           {
-                            "x": 48,
-                            "y": 41
+                            "x": 59,
+                            "y": 54
                           },
                           {
-                            "x": 24,
-                            "y": 41
+                            "x": 21,
+                            "y": 54
                           }
                         ]
                       ]
@@ -321,47 +214,13 @@
               ]
             }
           ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "NewSprite3",
-          "persistentUuid": "d4fe2754-54e1-4d06-b4b0-5925454154f9",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": []
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "NewSprite",
-          "persistentUuid": "4dcc7a7a-289c-4e54-bb46-98d63b9443d2",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": []
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
           {
-<<<<<<< Updated upstream
-            "objectName": "NewSprite3"
-=======
-            "objectName": "Blob"
->>>>>>> Stashed changes
-          },
-          {
-            "objectName": "NewSprite2"
-          },
-          {
-            "objectName": "NewSprite"
+            "objectName": "Pink_Blob"
           }
         ]
       },
