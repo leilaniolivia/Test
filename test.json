@@ -118,7 +118,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.546875,
+        "zoomFactor": 0.6040838749988865,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -132,6 +132,41 @@
           "height": 0,
           "keepRatio": true,
           "layer": "",
+<<<<<<< Updated upstream
+=======
+          "name": "Blob",
+          "persistentUuid": "c69f0c82-670c-4f92-b543-dee1893cd1af",
+          "width": 0,
+          "x": 530,
+          "y": 160,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Blob",
+          "persistentUuid": "fea2a32e-96f4-496d-8d16-3db5546fb221",
+          "width": 0,
+          "x": 610,
+          "y": 254,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+>>>>>>> Stashed changes
           "name": "NewSprite2",
           "persistentUuid": "e5e9b630-0726-4a44-8da6-9a9f309b2771",
           "width": 0,
@@ -163,6 +198,71 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
+<<<<<<< Updated upstream
+=======
+          "name": "Blob",
+          "persistentUuid": "388dbe79-e1b9-4ae9-a563-c392dc1cbbbf",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 21,
+                            "y": 20
+                          },
+                          {
+                            "x": 40,
+                            "y": 20
+                          },
+                          {
+                            "x": 40,
+                            "y": 32
+                          },
+                          {
+                            "x": 21,
+                            "y": 32
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+>>>>>>> Stashed changes
           "name": "NewSprite2",
           "persistentUuid": "8eb7c13f-1c05-4ccf-93ed-d6abdf28d824",
           "type": "Sprite",
@@ -251,7 +351,11 @@
         "folderName": "__ROOT",
         "children": [
           {
+<<<<<<< Updated upstream
             "objectName": "NewSprite3"
+=======
+            "objectName": "Blob"
+>>>>>>> Stashed changes
           },
           {
             "objectName": "NewSprite2"
