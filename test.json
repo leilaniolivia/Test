@@ -463,7 +463,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "color randomization"
+          "comment": "blob creation"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -499,34 +499,7 @@
                 "=",
                 "Blob.Variable(colorId)"
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "brownian motion"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "SceneJustBegins"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
+            },
             {
               "type": {
                 "value": "SetNumberObjectVariable"
@@ -546,7 +519,7 @@
                 "Blob",
                 "speed",
                 "=",
-                "RandomInRange(40,120)"
+                "RandomInRange(0,1)"
               ]
             }
           ]
@@ -561,7 +534,89 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "movement"
+          "comment": "slow blobs"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "Blob",
+                "speed",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Blob",
+                "speed",
+                "=",
+                "20"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "fast blobs"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "Blob",
+                "speed",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Blob",
+                "speed",
+                "=",
+                "120"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "brownian movement"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -579,6 +634,18 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "random direction"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -617,6 +684,23 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "wall detection"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
