@@ -222,6 +222,14 @@
         "name": "Pink_Blob_-removebg-preview",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "Green Rectangle Background.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green Rectangle Background.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -235,8 +243,13 @@
     {
       "b": 32,
       "disableInputWhenNotFocused": true,
+<<<<<<< Updated upstream
       "mangledName": "Creation",
       "name": "Creation",
+=======
+      "mangledName": "Game",
+      "name": "Game",
+>>>>>>> Stashed changes
       "r": 1,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
@@ -271,12 +284,18 @@
           "name": "Blob",
           "persistentUuid": "85e56372-2814-4775-a646-baa2dda73bb9",
           "width": 0,
+<<<<<<< Updated upstream
           "x": 137,
           "y": 222,
+=======
+          "x": 323,
+          "y": 160,
+>>>>>>> Stashed changes
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+<<<<<<< Updated upstream
         },
         {
           "angle": 0,
@@ -309,13 +328,19 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+=======
+>>>>>>> Stashed changes
         }
       ],
       "objects": [
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
+<<<<<<< Updated upstream
           "name": "Blob",
+=======
+          "name": "Puple_Blob",
+>>>>>>> Stashed changes
           "persistentUuid": "b8647b6e-437c-466a-b6bf-3c27fffa7339",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -448,7 +473,23 @@
         "folderName": "__ROOT",
         "children": [
           {
+<<<<<<< Updated upstream
             "objectName": "Blob"
+=======
+            "objectName": "Puple_Blob"
+          },
+          {
+            "objectName": "Blue_Blob"
+          },
+          {
+            "objectName": "Green_Blob"
+          },
+          {
+            "objectName": "Orange_Blob"
+          },
+          {
+            "objectName": "Pink_Blob"
+>>>>>>> Stashed changes
           }
         ]
       },
@@ -716,8 +757,13 @@
     {
       "b": 255,
       "disableInputWhenNotFocused": true,
+<<<<<<< Updated upstream
       "mangledName": "Every_32Level_32Frame",
       "name": "Every Level Frame",
+=======
+      "mangledName": "GameScene",
+      "name": "GameScene",
+>>>>>>> Stashed changes
       "r": 247,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
@@ -742,10 +788,101 @@
       },
       "objectsGroups": [],
       "variables": [],
+<<<<<<< Updated upstream
       "instances": [],
       "objects": [],
       "objectsFolderStructure": {
         "folderName": "__ROOT"
+=======
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 719,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewSprite",
+          "persistentUuid": "4a55385d-a212-436e-a46c-da975fe776ea",
+          "width": 1009,
+          "x": -5,
+          "y": 1,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Green Rectangle Background.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 422,
+                            "y": 0
+                          },
+                          {
+                            "x": 422,
+                            "y": 337
+                          },
+                          {
+                            "x": 0,
+                            "y": 337
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "NewSprite"
+          }
+        ]
+>>>>>>> Stashed changes
       },
       "events": [],
       "layers": [
@@ -815,7 +952,36 @@
           ]
         }
       ],
+<<<<<<< Updated upstream
       "behaviorsSharedData": []
+=======
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        }
+      ]
+>>>>>>> Stashed changes
     }
   ],
   "externalEvents": [],
