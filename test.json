@@ -94,6 +94,22 @@
         "name": "NewSprite4",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NewSprite6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/NewSprite5.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -105,15 +121,15 @@
   "variables": [],
   "layouts": [
     {
-      "b": 255,
+      "b": 32,
       "disableInputWhenNotFocused": true,
       "mangledName": "Untitled_32scene",
       "name": "Untitled scene",
-      "r": 247,
+      "r": 1,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
       "title": "",
-      "v": 249,
+      "v": 50,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -147,6 +163,50 @@
           "x": 947,
           "y": 528,
           "zOrder": 1,
+          "depth": 0,
+          "height": 200,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewSprite",
+          "persistentUuid": "c6cc001c-4c52-4d09-9006-cdb38652f91b",
+          "width": 200,
+          "x": 434,
+          "y": 270,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 300,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NewSprite2",
+          "persistentUuid": "98f4a68d-7e21-4a08-87bc-69ae86cee8e3",
+          "width": 300,
+          "x": 888,
+          "y": 398,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 272,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Pink_Blob",
+          "persistentUuid": "4c2d529b-d1f8-4393-b415-67cb2e99330d",
+          "width": 351,
+          "x": 676,
+          "y": 24,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -252,6 +312,128 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite",
+          "persistentUuid": "235792b2-4d22-4652-85ef-c6efb2e329fe",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/NewSprite6.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 20,
+                            "y": 16
+                          },
+                          {
+                            "x": 57,
+                            "y": 16
+                          },
+                          {
+                            "x": 57,
+                            "y": 55
+                          },
+                          {
+                            "x": 20,
+                            "y": 55
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite2",
+          "persistentUuid": "aaaf961f-1c4c-4723-bd12-f3180d458de3",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/NewSprite5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 11,
+                            "y": 4
+                          },
+                          {
+                            "x": 64,
+                            "y": 4
+                          },
+                          {
+                            "x": 64,
+                            "y": 52
+                          },
+                          {
+                            "x": 11,
+                            "y": 52
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -259,6 +441,13 @@
         "children": [
           {
             "objectName": "Blob"
+            "objectName": "Pink_Blob"
+          },
+          {
+            "objectName": "NewSprite"
+          },
+          {
+            "objectName": "NewSprite2"
           }
         ]
       },
