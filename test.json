@@ -283,6 +283,23 @@
           "conditions": [
             {
               "type": {
+                "value": "StringObjectVariable"
+              },
+              "parameters": [
+                "Blob",
+                "speed",
+                "=",
+                "\"slow\""
+              ]
+            }
+          ],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "value": "CompareObjectTimer"
               },
               "parameters": [
