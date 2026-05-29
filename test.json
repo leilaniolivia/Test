@@ -206,6 +206,22 @@
         "name": "Orange_Blob_-removebg-preview",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "Pink_Blob_-removebg-preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Pink_Blob_-removebg-preview.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Pink_Blob_-removebg-preview.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Pink_Blob_-removebg-preview",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -238,7 +254,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5653158055126306,
+        "zoomFactor": 0.546875,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -248,24 +264,8 @@
       "instances": [
         {
           "angle": 0,
-<<<<<<< Updated upstream
-          "customSize": true,
-          "depth": 6,
-          "height": 112,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Blob",
-          "persistentUuid": "87815a1a-8232-424b-b524-7d0d36c262b7",
-          "width": 125,
-          "x": 947,
-          "y": 528,
-          "zOrder": 1,
-          "depth": 0,
-          "height": 200,
-=======
           "customSize": false,
           "height": 0,
->>>>>>> Stashed changes
           "keepRatio": true,
           "layer": "",
           "name": "Puple_Blob",
@@ -325,57 +325,35 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Pink_Blob",
+          "persistentUuid": "5a2d12c5-fc35-49e2-882e-49d25158d3a2",
+          "width": 0,
+          "x": 1012,
+          "y": 230,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "Blob",
+          "name": "Pink_Bl",
           "persistentUuid": "fa04b0e0-8150-477c-a26a-03061700f6ba",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [
-            {
-              "name": "size",
-              "type": "number",
-              "value": 1
-            },
-            {
-              "name": "colorId",
-              "type": "number",
-              "value": 3
-            },
-            {
-              "name": "speed",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "direction",
-              "type": "number",
-              "value": 0
-            }
-          ],
+          "variables": [],
           "effects": [],
-          "behaviors": [
-            {
-              "acceleration": 400,
-              "allowDiagonals": true,
-              "angleOffset": 0,
-              "angularMaxSpeed": 180,
-              "customIsometryAngle": 30,
-              "deceleration": 800,
-              "ignoreDefaultControls": false,
-              "maxSpeed": 200,
-              "movementAngleOffset": 0,
-              "name": "TopDownMovement",
-              "rotateObject": true,
-              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-              "useLegacyTurnBack": false,
-              "viewpoint": "TopDown"
-            }
-          ],
+          "behaviors": [],
           "animations": [
             {
               "name": "NewSprite2",
@@ -797,16 +775,75 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Pink_Blob",
+          "persistentUuid": "8159f559-f5d5-4abe-aec0-2a74af9550a5",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Pink_Blob_-removebg-preview",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Pink_Blob_-removebg-preview",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 258,
+                            "y": 0
+                          },
+                          {
+                            "x": 258,
+                            "y": 208
+                          },
+                          {
+                            "x": 6,
+                            "y": 208
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "Blob"
-	  },
-          {
-            "objectName": "Pink_Blob"
+            "objectName": "Pink_Bl"
           },
           {
             "objectName": "NewSprite"
@@ -825,68 +862,13 @@
           },
           {
             "objectName": "Orange_Blob"
+          },
+          {
+            "objectName": "Pink_Blob"
           }
         ]
       },
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "SceneJustBegins"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "Blob",
-                "direction",
-                "=",
-                "RandomInRange(0,360)"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberObjectVariable"
-              },
-              "parameters": [
-                "Blob",
-                "speed",
-                "=",
-                "RandomInRange(40,120)"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        }
-      ],
+      "events": [],
       "layers": [
         {
           "ambientLightColorB": 200,
@@ -978,10 +960,6 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
-        },
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
         }
       ]
     }
