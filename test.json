@@ -173,32 +173,34 @@
             },
             {
               "name": "speed",
-              "type": "string",
-              "value": "\"fast\""
+              "type": "number",
+              "value": 0
             },
             {
               "name": "direction",
               "type": "number",
               "value": 0
-            },
-            {
-              "name": "directionSpeed",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "angle",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "nextChange",
-              "type": "number",
-              "value": 0
             }
           ],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "acceleration": 400,
+              "allowDiagonals": true,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "customIsometryAngle": 30,
+              "deceleration": 800,
+              "ignoreDefaultControls": false,
+              "maxSpeed": 200,
+              "movementAngleOffset": 0,
+              "name": "TopDownMovement",
+              "rotateObject": true,
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "useLegacyTurnBack": false,
+              "viewpoint": "TopDown"
+            }
+          ],
           "animations": [
             {
               "name": "NewSprite2",
@@ -263,7 +265,16 @@
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustBegins"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
           "actions": [
             {
               "type": {
@@ -273,85 +284,41 @@
                 "Blob",
                 "direction",
                 "=",
-                "Random(360)"
+                "RandomInRange(0,360)"
               ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
-                "value": "StringObjectVariable"
+                "value": "SetNumberObjectVariable"
               },
               "parameters": [
                 "Blob",
                 "speed",
                 "=",
-                "\"slow\""
+                "RandomInRange(40,120)"
               ]
             }
-          ],
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
           "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "Blob",
-                "\"WanderTimer\n\"",
-                ">",
-                "Blob.Variable(nextChange)"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "Blob",
-                "\"WanderTimer\n\""
-              ]
-            }
-          ]
+          "conditions": [],
+          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "ClearForces"
-              },
-              "parameters": [
-                "Blob"
-              ]
-            }
-          ]
+          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "Blob",
-                "Blob.Variable(angle)",
-                "Blob.Variable(directionSpeed)",
-                "1"
-              ]
-            }
-          ]
+          "actions": []
         }
       ],
       "layers": [
@@ -445,6 +412,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
         }
       ]
     }
