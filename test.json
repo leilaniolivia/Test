@@ -142,7 +142,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.546875,
+        "zoomFactor": 0.5653158055126306,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -153,6 +153,16 @@
         {
           "angle": 0,
           "customSize": true,
+          "depth": 6,
+          "height": 112,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Blob",
+          "persistentUuid": "87815a1a-8232-424b-b524-7d0d36c262b7",
+          "width": 125,
+          "x": 947,
+          "y": 528,
+          "zOrder": 1,
           "depth": 0,
           "height": 200,
           "keepRatio": true,
@@ -206,13 +216,51 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "Pink_Blob",
+          "name": "Blob",
           "persistentUuid": "fa04b0e0-8150-477c-a26a-03061700f6ba",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "size",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "colorId",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "name": "speed",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "direction",
+              "type": "number",
+              "value": 0
+            }
+          ],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "acceleration": 400,
+              "allowDiagonals": true,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "customIsometryAngle": 30,
+              "deceleration": 800,
+              "ignoreDefaultControls": false,
+              "maxSpeed": 200,
+              "movementAngleOffset": 0,
+              "name": "TopDownMovement",
+              "rotateObject": true,
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "useLegacyTurnBack": false,
+              "viewpoint": "TopDown"
+            }
+          ],
           "animations": [
             {
               "name": "NewSprite2",
@@ -392,6 +440,9 @@
         "folderName": "__ROOT",
         "children": [
           {
+            "objectName": "Blob"
+	  },
+          {
             "objectName": "Pink_Blob"
           },
           {
@@ -402,7 +453,65 @@
           }
         ]
       },
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustBegins"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Blob",
+                "direction",
+                "=",
+                "RandomInRange(0,360)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Blob",
+                "speed",
+                "=",
+                "RandomInRange(40,120)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 200,
@@ -494,6 +603,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
         }
       ]
     }
