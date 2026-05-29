@@ -110,6 +110,102 @@
         "name": "assets/NewSprite5.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "Large Purple Blob .png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Large Purple Blob .png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Large_Purple_Blob_-removebg-preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Large_Purple_Blob_-removebg-preview.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Large_Purple_Blob_-removebg-preview2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Large_Purple_Blob_-removebg-preview2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Large_Purple_Blob_-removebg-preview2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Large_Purple_Blob_-removebg-preview2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Purple_Blob_-removebg-preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Purple_Blob_-removebg-preview.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Purple_Blob_-removebg-preview.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Purple_Blob_-removebg-preview",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Blue_Blob_-removebg-preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Blue_Blob_-removebg-preview.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Blue_Blob_-removebg-preview.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Blue_Blob_-removebg-preview",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Green_Blob_-removebg-preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Green_Blob_-removebg-preview.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Green_Blob_-removebg-preview.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Green_Blob_-removebg-preview",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Orange_Blob_-removebg-preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Orange_Blob_-removebg-preview.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Orange_Blob_-removebg-preview.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Orange_Blob_-removebg-preview",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -152,6 +248,7 @@
       "instances": [
         {
           "angle": 0,
+<<<<<<< Updated upstream
           "customSize": true,
           "depth": 6,
           "height": 112,
@@ -165,13 +262,17 @@
           "zOrder": 1,
           "depth": 0,
           "height": 200,
+=======
+          "customSize": false,
+          "height": 0,
+>>>>>>> Stashed changes
           "keepRatio": true,
           "layer": "",
-          "name": "NewSprite",
-          "persistentUuid": "c6cc001c-4c52-4d09-9006-cdb38652f91b",
-          "width": 200,
-          "x": 434,
-          "y": 270,
+          "name": "Puple_Blob",
+          "persistentUuid": "85e56372-2814-4775-a646-baa2dda73bb9",
+          "width": 0,
+          "x": 0,
+          "y": 238,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -179,16 +280,15 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 300,
+          "customSize": false,
+          "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "NewSprite2",
-          "persistentUuid": "98f4a68d-7e21-4a08-87bc-69ae86cee8e3",
-          "width": 300,
-          "x": 888,
-          "y": 398,
+          "name": "Blue_Blob",
+          "persistentUuid": "ac4e6edd-fb8b-4ba0-94dc-8d40e8bc4e37",
+          "width": 0,
+          "x": 270,
+          "y": 38,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -196,17 +296,32 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 272,
+          "customSize": false,
+          "height": 0,
           "keepRatio": true,
           "layer": "",
-          "name": "Pink_Blob",
-          "persistentUuid": "4c2d529b-d1f8-4393-b415-67cb2e99330d",
-          "width": 351,
-          "x": 676,
-          "y": 24,
+          "name": "Green_Blob",
+          "persistentUuid": "7030b92a-9779-4c11-a4ba-2909d019addd",
+          "width": 0,
+          "x": 545,
+          "y": 248,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Orange_Blob",
+          "persistentUuid": "c7b769ab-52e0-4f09-9096-402f2a785d4e",
+          "width": 0,
+          "x": 822,
+          "y": 40,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -434,6 +549,254 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Puple_Blob",
+          "persistentUuid": "b8647b6e-437c-466a-b6bf-3c27fffa7339",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Purple_Blob_-removebg-preview",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Purple_Blob_-removebg-preview",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 5,
+                            "y": 0
+                          },
+                          {
+                            "x": 258,
+                            "y": 0
+                          },
+                          {
+                            "x": 258,
+                            "y": 208
+                          },
+                          {
+                            "x": 5,
+                            "y": 208
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Blue_Blob",
+          "persistentUuid": "02098339-4912-4ad1-8fb7-42709c1477a8",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Blue_Blob_-removebg-preview",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Blue_Blob_-removebg-preview",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 5,
+                            "y": 0
+                          },
+                          {
+                            "x": 258,
+                            "y": 0
+                          },
+                          {
+                            "x": 258,
+                            "y": 208
+                          },
+                          {
+                            "x": 5,
+                            "y": 208
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Green_Blob",
+          "persistentUuid": "6f325c92-c8de-4b15-862d-18dfb7794694",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Green_Blob_-removebg-preview",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Green_Blob_-removebg-preview",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 5,
+                            "y": 0
+                          },
+                          {
+                            "x": 259,
+                            "y": 0
+                          },
+                          {
+                            "x": 259,
+                            "y": 208
+                          },
+                          {
+                            "x": 5,
+                            "y": 208
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Orange_Blob",
+          "persistentUuid": "dfc99d27-699a-4bda-9434-1ae8662c1c80",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "Orange_Blob_-removebg-preview",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Orange_Blob_-removebg-preview",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 6,
+                            "y": 0
+                          },
+                          {
+                            "x": 258,
+                            "y": 0
+                          },
+                          {
+                            "x": 258,
+                            "y": 208
+                          },
+                          {
+                            "x": 6,
+                            "y": 208
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -450,6 +813,18 @@
           },
           {
             "objectName": "NewSprite2"
+          },
+          {
+            "objectName": "Puple_Blob"
+          },
+          {
+            "objectName": "Blue_Blob"
+          },
+          {
+            "objectName": "Green_Blob"
+          },
+          {
+            "objectName": "Orange_Blob"
           }
         ]
       },
