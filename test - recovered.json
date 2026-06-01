@@ -1014,13 +1014,44 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.546875,
+        "zoomFactor": 0.6040838749988865,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
       },
       "objectsGroups": [],
-      "variables": [],
+      "variables": [
+        {
+          "name": "StartX",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "StartY",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "EndX",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "EndY",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Radius",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "IsDrawing",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "instances": [
         {
           "angle": 0,
@@ -1132,6 +1163,22 @@
           "x": 1060,
           "y": 76,
           "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "CircleDrawer",
+          "persistentUuid": "92e98f8a-7f2c-426b-b14c-9a6bbb4eac52",
+          "width": 0,
+          "x": 502,
+          "y": 411,
+          "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1518,38 +1565,7 @@
           "name": "CircleDrawer",
           "persistentUuid": "4781ddd3-fc31-4124-8895-3502c94db4b7",
           "type": "PrimitiveDrawing::Drawer",
-          "variables": [
-            {
-              "name": "StartX",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "StartY",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "EndX",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "EndY",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "Radius",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "IsDrawing",
-              "type": "number",
-              "value": 0
-            }
-          ],
+          "variables": [],
           "effects": [],
           "behaviors": [],
           "fillOpacity": 255,
@@ -1611,9 +1627,160 @@
       },
       "events": [
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "StartX",
+                "=",
+                "CursorX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "StartY",
+                "=",
+                "CursorY()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "IsDrawing",
+                "=",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "IsDrawing",
+                "=",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "EndX",
+                "=",
+                "CursorX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "EndY",
+                "=",
+                "CursorY()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Radius",
+                "=",
+                "sqrt((EndX - StartX) * (EndX - StartX) + (EndY - StartY) * (EndY - StartY))"
+              ]
+            },
+            {
+              "type": {
+                "value": "PrimitiveDrawing::Circle"
+              },
+              "parameters": [
+                "CircleDrawer",
+                "StartX",
+                "StartY",
+                "Radius"
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "IsDrawing",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "PrimitiveDrawing::Drawer::ClearShapes"
+              },
+              "parameters": [
+                "CircleDrawer"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
