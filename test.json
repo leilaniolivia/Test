@@ -1294,6 +1294,11 @@
           "name": "startY",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "circleRadius",
+          "type": "number",
+          "value": 0
         }
       ],
       "instances": [
@@ -1304,7 +1309,7 @@
           "height": 48,
           "keepRatio": true,
           "layer": "",
-          "name": "circlePainter",
+          "name": "circlePreview",
           "persistentUuid": "2715889c-daa3-495d-a6c4-a59f4316c4d7",
           "width": 45,
           "x": 299,
@@ -1318,7 +1323,7 @@
       "objects": [
         {
           "assetStoreId": "",
-          "name": "circlePainter",
+          "name": "circlePreview",
           "persistentUuid": "6e08bfdf-51fa-413e-b372-80dc21e58d46",
           "type": "PrimitiveDrawing::Drawer",
           "variables": [],
@@ -1367,14 +1372,14 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 31.5,
+                        "y": 33.5
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 31.5,
+                        "y": 33.5
                       },
                       "customCollisionMask": [
                         [
@@ -1408,7 +1413,7 @@
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "circlePainter"
+            "objectName": "circlePreview"
           },
           {
             "objectName": "drawnCircle"
@@ -1416,6 +1421,41 @@
         ]
       },
       "events": [
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "PrimitiveDrawing::Drawer::ClearShapes"
+              },
+              "parameters": [
+                "circlePreview"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetX"
+              },
+              "parameters": [
+                "circlePreview",
+                "=",
+                "MouseX(\"Scene\")"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetY"
+              },
+              "parameters": [
+                "circlePreview",
+                "=",
+                "MouseY(\"Scene\")"
+              ]
+            }
+          ]
+        },
         {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
@@ -1429,7 +1469,6 @@
           "comment": "Mouse Down"
         },
         {
-          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1445,7 +1484,6 @@
           "actions": [],
           "events": [
             {
-              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1473,7 +1511,7 @@
                   "parameters": [
                     "startX",
                     "=",
-                    "MouseX(\"Base Layer\",0)"
+                    "MouseX(\"Scene\")"
                   ]
                 },
                 {
@@ -1483,7 +1521,15 @@
                   "parameters": [
                     "startY",
                     "=",
-                    "MouseY(\"Base Layer\",0)"
+                    "MouseY(\"Scene\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PrimitiveDrawing::Drawer::ClearShapes"
+                  },
+                  "parameters": [
+                    "circlePreview"
                   ]
                 }
               ]
@@ -1503,7 +1549,6 @@
           "comment": "Mouse held"
         },
         {
-          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1523,7 +1568,27 @@
                 "value": "PrimitiveDrawing::Drawer::ClearShapes"
               },
               "parameters": [
-                "circlePainter"
+                "circlePreview"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetX"
+              },
+              "parameters": [
+                "circlePreview",
+                "=",
+                "startX"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetY"
+              },
+              "parameters": [
+                "circlePreview",
+                "=",
+                "startY"
               ]
             },
             {
@@ -1531,10 +1596,30 @@
                 "value": "PrimitiveDrawing::Circle"
               },
               "parameters": [
-                "circlePainter",
+                "circlePreview",
                 "Variable(startX)",
                 "Variable(startY)",
-                "DistanceBetweenPositions(Variable(startX), Variable(startY), MouseX(), MouseY())"
+                "DistanceBetweenPositions(Variable(startX), Variable(startY), MouseX(\"Scene\"), MouseY(\"Scene\"))"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "circlePreview",
+                "=",
+                "startX"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterY"
+              },
+              "parameters": [
+                "circlePreview",
+                "=",
+                "startY"
               ]
             }
           ]
@@ -1557,7 +1642,6 @@
           "comment": "Mouse released"
         },
         {
-          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1596,7 +1680,29 @@
                 "value": "PrimitiveDrawing::Drawer::ClearShapes"
               },
               "parameters": [
-                "circlePainter"
+                "circlePreview"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetWidth"
+              },
+              "parameters": [
+                "drawnCircle",
+                "Resizable",
+                "=",
+                "DistanceBetweenPositions(\n  Variable(startX),\n  Variable(startY),\n  MouseX(\"Base Layer\",0),\n  MouseY(\"Base Layer\",0)\n) * 2"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResizableCapability::ResizableBehavior::SetHeight"
+              },
+              "parameters": [
+                "drawnCircle",
+                "Resizable",
+                "=",
+                "DistanceBetweenPositions(\n  Variable(startX),\n  Variable(startY),\n  MouseX(\"Base Layer\",0),\n  MouseY(\"Base Layer\",0)\n) * 2"
               ]
             },
             {
@@ -1610,30 +1716,13 @@
                 "Variable(startY)",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "ScalableCapability::ScalableBehavior::SetValue"
-              },
-              "parameters": [
-                "drawnCircle",
-                "Scale",
-                "=",
-                "   DistanceBetweenPositions(startX,startY,MouseX(),MouseY()) / 64"
-              ]
-            },
-            {
-              "type": {
-                "value": "PrimitiveDrawing::Circle"
-              },
-              "parameters": [
-                "circlePainter",
-                "Variable(startX)",
-                "Variable(startY)",
-                "DistanceBetweenPositions(Variable(startX), Variable(startY), MouseX(), MouseY())"
-              ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
