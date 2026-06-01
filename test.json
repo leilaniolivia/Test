@@ -1429,6 +1429,7 @@
           "comment": "Mouse Down"
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1444,6 +1445,7 @@
           "actions": [],
           "events": [
             {
+              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -1471,7 +1473,7 @@
                   "parameters": [
                     "startX",
                     "=",
-                    "MouseX(\"\",0)"
+                    "MouseX(\"Base Layer\",0)"
                   ]
                 },
                 {
@@ -1481,7 +1483,7 @@
                   "parameters": [
                     "startY",
                     "=",
-                    "MouseY(\"\",0)"
+                    "MouseY(\"Base Layer\",0)"
                   ]
                 }
               ]
@@ -1501,6 +1503,7 @@
           "comment": "Mouse held"
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1554,6 +1557,7 @@
           "comment": "Mouse released"
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1605,6 +1609,17 @@
                 "Variable(startX)",
                 "Variable(startY)",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "drawnCircle",
+                "Scale",
+                "=",
+                "   DistanceBetweenPositions(startX,startY,MouseX(),MouseY()) / 64"
               ]
             },
             {
