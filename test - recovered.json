@@ -1031,7 +1031,7 @@
           "layer": "",
           "name": "Field",
           "persistentUuid": "4cb25f97-c990-4dfe-99c2-27e52115210c",
-          "width": 934,
+          "width": 1029,
           "x": -1,
           "y": 1,
           "zOrder": 1,
@@ -1096,9 +1096,9 @@
           "layer": "",
           "name": "RightPanel",
           "persistentUuid": "37520f12-0d51-4aad-a5e2-861435298416",
-          "width": 350,
-          "x": 933,
-          "y": 2,
+          "width": 268,
+          "x": 1013,
+          "y": 0,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -1113,8 +1113,8 @@
           "name": "PanelTitle",
           "persistentUuid": "ec0c6a68-db39-41dc-9566-251c84fa8870",
           "width": 0,
-          "x": 997,
-          "y": 29,
+          "x": 1066,
+          "y": 31,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -1129,8 +1129,8 @@
           "name": "InventoryText",
           "persistentUuid": "f8e1d01c-a298-41e5-a4b6-730848d0c003",
           "width": 0,
-          "x": 1005,
-          "y": 71,
+          "x": 1060,
+          "y": 76,
           "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
@@ -1518,7 +1518,38 @@
           "name": "CircleDrawer",
           "persistentUuid": "4781ddd3-fc31-4124-8895-3502c94db4b7",
           "type": "PrimitiveDrawing::Drawer",
-          "variables": [],
+          "variables": [
+            {
+              "name": "StartX",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "StartY",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "EndX",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "EndY",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Radius",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "IsDrawing",
+              "type": "number",
+              "value": 0
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "fillOpacity": 255,
@@ -1578,7 +1609,13 @@
           }
         ]
       },
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 200,
