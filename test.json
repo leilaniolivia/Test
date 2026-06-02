@@ -294,6 +294,26 @@
         "name": "circle_ring_purple.png-removebg-preview.png",
         "smoothed": true,
         "userAdded": false
+        "file": "assets/VT323-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "8612da6519a39bab40fb3fb527dd7574679e45f603b2be582cf2d47a6b12b93f_VT323-Regular.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Open Font License/8612da6519a39bab40fb3fb527dd7574679e45f603b2be582cf2d47a6b12b93f_VT323-Regular.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/Kenney Mini Square.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "d73fbc705487707ea61faa2b865e21e3b24bea3319f75c2a124ad13bcae99ab4_Kenney Mini Square.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Font Pack/d73fbc705487707ea61faa2b865e21e3b24bea3319f75c2a124ad13bcae99ab4_Kenney Mini Square.ttf",
+          "name": "gdevelop-asset-store"
+        }
       }
     ]
   },
@@ -695,9 +715,19 @@
           "value": 0
         },
         {
-          "name": "circleRadius",
+          "name": "radius",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "groupCount",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "attributeTracker",
+          "type": "structure",
+          "children": []
         }
       ],
       "instances": [
@@ -1039,6 +1069,10 @@
           "italic": false,
           "name": "TimerText",
           "persistentUuid": "ebe1aa1c-8f0a-4fe7-a4da-c1491984c880",
+          "bold": false,
+          "italic": false,
+          "name": "groupText",
+          "persistentUuid": "1aec0dd0-5bab-40e2-86de-3ca1fd2e917d",
           "smoothed": true,
           "type": "TextObject::Text",
           "underlined": false,
@@ -1046,6 +1080,7 @@
           "effects": [],
           "behaviors": [],
           "string": "Time: 60",
+          "string": "Text",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -1053,6 +1088,9 @@
             "b": 0,
             "g": 0,
             "r": 0
+            "b": 226,
+            "g": 144,
+            "r": 74
           },
           "content": {
             "bold": false,
@@ -1069,6 +1107,7 @@
             "smoothed": true,
             "underlined": false,
             "text": "Time: 60",
+            "text": "Text",
             "font": "",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -1401,6 +1440,8 @@
               ]
             }
           ]
+            "color": "74;144;226"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -1438,6 +1479,7 @@
           },
           {
             "objectName": "dashedCircle"
+            "objectName": "groupText"
           }
         ]
       },
@@ -1890,7 +1932,7 @@
               "parameters": [
                 "Blob",
                 "=",
-                "SceneWindowWidth() - Blob.Width() - 5"
+                "SceneWindowWidth() - Blob.Width() - 6"
               ]
             }
           ]
@@ -1928,7 +1970,7 @@
               "parameters": [
                 "Blob",
                 "=",
-                "5"
+                "6"
               ]
             }
           ]
@@ -1966,7 +2008,7 @@
               "parameters": [
                 "Blob",
                 "=",
-                "SceneWindowHeight() - Blob.Height() - 5"
+                "SceneWindowHeight() - Blob.Height() - 6"
               ]
             }
           ]
@@ -2020,6 +2062,15 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "groupText",
+                    "Text"
+                  ]
+                },
                 {
                   "type": {
                     "value": "PrimitiveDrawing::Drawer::ClearShapes"
@@ -2196,6 +2247,16 @@
           "actions": [
             {
               "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "groupCount",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
                 "value": "Create"
               },
               "parameters": [
@@ -2253,6 +2314,27 @@
                 "dashedCircle",
                 "=",
                 "startY"
+                "value": "Delete"
+              },
+              "parameters": [
+                "groupText",
+                "Text"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "radius",
+                "=",
+                "DistanceBetweenPositions(\nVariable(startX),\nVariable(startY),\nMouseX(\"Scene\"),\nMouseY(\"Scene\")\n)"
               ]
             }
           ]
@@ -2331,6 +2413,219 @@
                     ""
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": " Harmony Score calculator",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Counting number of blobs in each group"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "groupCount",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "groupText",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Blob",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "DistanceBetweenPositions(\n    Blob.X(),\n    Blob.Y(),\n    Variable(startX),\n    Variable(startY))",
+                "<=",
+                "Variable(radius)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "Blob",
+                "inGroup",
+                "=",
+                "\"1\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Blob",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "DistanceBetweenPositions(\n Blob.X(),\n Blob.Y(),\n Variable(startX),\n Variable(startY)\n)",
+                ">",
+                "Variable(radius)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "Blob",
+                "inGroup",
+                "=",
+                "\"0\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "groupText",
+                "startX",
+                "startY",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Blob",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "Blob",
+                    "inGroup",
+                    "=",
+                    "\"1\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "groupCount",
+                    "+",
+                    "1"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "groupText",
+                "Text",
+                "=",
+                "\n\"Blobs in group: \" + ToString(Variable(groupCount))"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Harmony Score:"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Reset and Tally"
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "drawnCircle",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "attributeTracker",
+                "=",
+                ""
               ]
             }
           ]
