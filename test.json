@@ -210,7 +210,7 @@
       {
         "file": "Pink_Blob_-removebg-preview.png",
         "kind": "image",
-        "metadata": "{\"localFilePath\":\"Pink_Blob_-removebg-preview.png\",\"extension\":\".png\"}",
+        "metadata": "",
         "name": "Pink_Blob_-removebg-preview.png",
         "smoothed": true,
         "userAdded": false
@@ -228,94 +228,6 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite5",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/blueBlob2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/blueBlob2.png\"}",
-        "name": "blueBlob",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Green Rectangle Background.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Green Rectangle Background.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Grey Rectangle.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Grey Rectangle.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Image 6-2-26 at 12.06 AM.jpeg",
-        "kind": "image",
-        "metadata": "",
-        "name": "Image 6-2-26 at 12.06 AM.jpeg",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/greenBlob2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "greenBlob",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/pinkBlob2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "pinkBlob",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/orangeBlob2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "orangeBlob",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Game Scene.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Game Scene.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Game Scene2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Game Scene2.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Game Scene3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Game Scene3.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "Game Scene4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Game Scene4.png",
         "smoothed": true,
         "userAdded": false
       }
@@ -409,159 +321,11 @@
           "directions": [
             {
               "looping": false,
-              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "blueBlob",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 5,
-                        "y": 0
-                      },
-                      {
-                        "x": 258,
-                        "y": 0
-                      },
-                      {
-                        "x": 258,
-                        "y": 208
-                      },
-                      {
-                        "x": 5,
-                        "y": 208
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "greenBlob",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "greenBlob",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 5,
-                        "y": 0
-                      },
-                      {
-                        "x": 258,
-                        "y": 0
-                      },
-                      {
-                        "x": 258,
-                        "y": 208
-                      },
-                      {
-                        "x": 5,
-                        "y": 208
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "pinkBlob",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "pinkBlob",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 5,
-                        "y": 0
-                      },
-                      {
-                        "x": 258,
-                        "y": 0
-                      },
-                      {
-                        "x": 258,
-                        "y": 208
-                      },
-                      {
-                        "x": 5,
-                        "y": 208
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "orangeBlob",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "orangeBlob",
+                  "image": "Blue_Blob_-removebg-preview.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -1554,6 +1318,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "drawnCircle",
+          "persistentUuid": "d74f5361-605c-4c15-9ffb-651062bf904d",
+          "width": 0,
+          "x": 661,
+          "y": 367,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -1565,7 +1345,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "fillOpacity": 255,
+          "fillOpacity": 0,
           "outlineSize": 1,
           "outlineOpacity": 255,
           "absoluteCoordinates": false,
@@ -1577,72 +1357,35 @@
             "b": 255
           },
           "outlineColor": {
-            "r": 0,
-            "g": 0,
-            "b": 0
+            "r": 74,
+            "g": 144,
+            "b": 226
           }
         },
         {
-          "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "drawnCircle",
-          "persistentUuid": "6518db50-d1fb-474d-8cbb-1f0a77a1e040",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "persistentUuid": "3a4b1e91-a32d-40bb-bdc6-1aa4f0b47428",
+          "type": "PrimitiveDrawing::Drawer",
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite5",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 31.5,
-                        "y": 33.5
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 31.5,
-                        "y": 33.5
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 16,
-                            "y": 19
-                          },
-                          {
-                            "x": 46,
-                            "y": 19
-                          },
-                          {
-                            "x": 46,
-                            "y": 48
-                          },
-                          {
-                            "x": 16,
-                            "y": 48
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "fillOpacity": 0,
+          "outlineSize": 3,
+          "outlineOpacity": 130,
+          "absoluteCoordinates": false,
+          "clearBetweenFrames": false,
+          "antialiasing": "none",
+          "fillColor": {
+            "r": 255,
+            "g": 255,
+            "b": 255
+          },
+          "outlineColor": {
+            "r": 74,
+            "g": 144,
+            "b": 226
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -1658,39 +1401,9 @@
       },
       "events": [
         {
-          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "PrimitiveDrawing::Drawer::ClearShapes"
-              },
-              "parameters": [
-                "circlePreview"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetX"
-              },
-              "parameters": [
-                "circlePreview",
-                "=",
-                "MouseX(\"Scene\")"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetY"
-              },
-              "parameters": [
-                "circlePreview",
-                "=",
-                "MouseY(\"Scene\")"
-              ]
-            }
-          ]
+          "actions": []
         },
         {
           "type": "BuiltinCommonInstructions::Comment",
@@ -1878,6 +1591,7 @@
           "comment": "Mouse released"
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -1939,7 +1653,7 @@
                 "drawnCircle",
                 "Resizable",
                 "=",
-                "DistanceBetweenPositions(\n  Variable(startX),\n  Variable(startY),\n  MouseX(\"Base Layer\",0),\n  MouseY(\"Base Layer\",0)\n) * 4"
+                "DistanceBetweenPositions(\n  Variable(startX),\n  Variable(startY),\n  MouseX(\"Base Layer\",0),\n  MouseY(\"Base Layer\",0)\n) * 4.5"
               ]
             },
             {
@@ -1950,7 +1664,94 @@
                 "drawnCircle",
                 "Resizable",
                 "=",
-                "DistanceBetweenPositions(\n  Variable(startX),\n  Variable(startY),\n  MouseX(\"Base Layer\",0),\n  MouseY(\"Base Layer\",0)\n) * 4\n"
+                "DistanceBetweenPositions(\n  Variable(startX),\n  Variable(startY),\n  MouseX(\"Base Layer\",0),\n  MouseY(\"Base Layer\",0)\n) * 4.5\n"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextReleased"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "isDrawing",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "drawnCircle",
+                "startX",
+                "startY",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PrimitiveDrawing::Circle"
+              },
+              "parameters": [
+                "drawnCircle",
+                "Variable(startX)",
+                "Variable(startY)",
+                "DistanceBetweenPositions(Variable(startX), Variable(startY), MouseX(\"Scene\"), MouseY(\"Scene\")) "
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterX"
+              },
+              "parameters": [
+                "drawnCircle",
+                "=",
+                "startX"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetCenterY"
+              },
+              "parameters": [
+                "drawnCircle",
+                "=",
+                "startY"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "isDrawing",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PrimitiveDrawing::Drawer::ClearShapes"
+              },
+              "parameters": [
+                "circlePreview"
               ]
             }
           ]
@@ -2052,815 +1853,6 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
-        }
-      ]
-    },
-    {
-      "b": 255,
-      "disableInputWhenNotFocused": true,
-      "mangledName": "GameScene",
-      "name": "GameScene",
-      "r": 247,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "",
-      "v": 249,
-      "uiSettings": {
-        "grid": false,
-        "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
-        "gridDepth": 32,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridOffsetZ": 0,
-        "gridColor": 10401023,
-        "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 0.46331118245139796,
-        "windowMask": false,
-        "selectedLayer": "",
-        "gameEditorMode": "instances-editor"
-      },
-      "objectsGroups": [],
-      "variables": [
-        {
-          "name": "isDrawing",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "name": "startX",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "name": "startY",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "name": "endX",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "name": "endY",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "name": "radius",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "name": "groupIndex",
-          "type": "number",
-          "value": 0
-        },
-        {
-          "name": "dashCount",
-          "type": "number",
-          "value": 24
-        }
-      ],
-      "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 71,
-          "height": 2664,
-          "keepRatio": true,
-          "layer": "",
-          "name": "FieldBackground",
-          "persistentUuid": "6bbe3825-6a3f-4796-bb82-39296a554eb9",
-          "width": 1171,
-          "x": -2,
-          "y": -11,
-          "zOrder": 10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        }
-      ],
-      "objects": [
-        {
-          "assetStoreId": "",
-          "bottomMargin": 0,
-          "height": 32,
-          "leftMargin": 0,
-          "name": "RightPanel",
-          "persistentUuid": "617554f9-a66c-46c8-9bd7-5dd7917feac5",
-          "rightMargin": 0,
-          "texture": "Grey Rectangle.png",
-          "tiled": false,
-          "topMargin": 0,
-          "type": "PanelSpriteObject::PanelSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "TimerText",
-          "persistentUuid": "46955eaa-5023-4501-9ba2-f1c1e95ef82e",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Time: 60",
-          "font": "",
-          "textAlignment": "left",
-          "characterSize": 20,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "Time: 60",
-            "font": "",
-            "textAlignment": "left",
-            "verticalTextAlignment": "top",
-            "characterSize": 20,
-            "lineHeight": 0,
-            "color": "255;255;255"
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "ScoreText",
-          "persistentUuid": "fdfab094-7643-47f3-a5ab-0396a106a909",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Score: 0",
-          "font": "",
-          "textAlignment": "left",
-          "characterSize": 20,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "Score: 0",
-            "font": "",
-            "textAlignment": "left",
-            "verticalTextAlignment": "top",
-            "characterSize": 20,
-            "lineHeight": 0,
-            "color": "255;255;255"
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "LevelText",
-          "persistentUuid": "2fcda970-63fa-429f-84e6-b5428e51bad1",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Level: 1",
-          "font": "",
-          "textAlignment": "left",
-          "characterSize": 20,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "Level: 1",
-            "font": "",
-            "textAlignment": "left",
-            "verticalTextAlignment": "top",
-            "characterSize": 20,
-            "lineHeight": 0,
-            "color": "255;255;255"
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "AttributesText",
-          "persistentUuid": "933c690b-ec21-463d-b8e2-ba057a871173",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Attributes\n\nSize:\nColor:\nSpeed:",
-          "font": "",
-          "textAlignment": "left",
-          "characterSize": 20,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "Attributes\n\nSize:\nColor:\nSpeed:",
-            "font": "",
-            "textAlignment": "left",
-            "verticalTextAlignment": "top",
-            "characterSize": 20,
-            "lineHeight": 0,
-            "color": "255;255;255"
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "GroupsText",
-          "persistentUuid": "e561ca01-e7ea-4ad2-99e1-689bec4a1712",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Groups Found: 0",
-          "font": "",
-          "textAlignment": "left",
-          "characterSize": 20,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "Groups Found: 0",
-            "font": "",
-            "textAlignment": "left",
-            "verticalTextAlignment": "top",
-            "characterSize": 20,
-            "lineHeight": 0,
-            "color": "255;255;255"
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "UngroupedText",
-          "persistentUuid": "4d774dc9-9912-4bef-8e39-0e3bef434d90",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Ungrouped Blobs: 8",
-          "font": "",
-          "textAlignment": "left",
-          "characterSize": 20,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "Ungrouped Blobs: 8",
-            "font": "",
-            "textAlignment": "left",
-            "verticalTextAlignment": "top",
-            "characterSize": 20,
-            "lineHeight": 0,
-            "color": "255;255;255"
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bottomMargin": 0,
-          "height": 32,
-          "leftMargin": 0,
-          "name": "PromptBar",
-          "persistentUuid": "174e322a-5698-4af2-92e0-c1bff5c86c7c",
-          "rightMargin": 0,
-          "texture": "Image 6-2-26 at 12.06 AM.jpeg",
-          "tiled": false,
-          "topMargin": 0,
-          "type": "PanelSpriteObject::PanelSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "PromptText",
-          "persistentUuid": "c4d7d748-09bd-46af-b638-d79cf0a09520",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Find and group blobs with matching attributes!",
-          "font": "",
-          "textAlignment": "left",
-          "characterSize": 20,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "Find and group blobs with matching attributes!",
-            "font": "",
-            "textAlignment": "left",
-            "verticalTextAlignment": "top",
-            "characterSize": 20,
-            "lineHeight": 0,
-            "color": "255;255;255"
-          }
-        },
-        {
-          "assetStoreId": "",
-          "name": "circlePreview",
-          "persistentUuid": "a2d6f316-576d-46e7-8458-3c8e7eba65ba",
-          "type": "PrimitiveDrawing::Drawer",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "fillOpacity": 255,
-          "outlineSize": 1,
-          "outlineOpacity": 255,
-          "absoluteCoordinates": false,
-          "clearBetweenFrames": true,
-          "antialiasing": "none",
-          "fillColor": {
-            "r": 255,
-            "g": 255,
-            "b": 255
-          },
-          "outlineColor": {
-            "r": 0,
-            "g": 0,
-            "b": 0
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bottomMargin": 0,
-          "height": 32,
-          "leftMargin": 0,
-          "name": "FieldBackground",
-          "persistentUuid": "e613ce0c-3056-46ab-8437-068ff26aaf03",
-          "rightMargin": 0,
-          "texture": "Game Scene4.png",
-          "tiled": false,
-          "topMargin": 0,
-          "type": "PanelSpriteObject::PanelSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
-        }
-      ],
-      "objectsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "objectName": "FieldBackground"
-          },
-          {
-            "objectName": "PromptBar"
-          },
-          {
-            "objectName": "RightPanel"
-          },
-          {
-            "objectName": "TimerText"
-          },
-          {
-            "objectName": "ScoreText"
-          },
-          {
-            "objectName": "LevelText"
-          },
-          {
-            "objectName": "AttributesText"
-          },
-          {
-            "objectName": "GroupsText"
-          },
-          {
-            "objectName": "UngroupedText"
-          },
-          {
-            "objectName": "PromptText"
-          },
-          {
-            "objectName": "circlePreview"
-          }
-        ]
-      },
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Event Title: Circle Drawing"
-        },
-        {
-          "disabled": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "MouseButtonFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"Left\""
-              ]
-            }
-          ],
-          "actions": [],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "isDrawing",
-                    "=",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "startX",
-                    "=",
-                    "CursorX()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "startY",
-                    "=",
-                    "CursorY()"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PrimitiveDrawing::Drawer::ClearShapes"
-                  },
-                  "parameters": [
-                    "circlePreview"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Event Title: Mouse Held"
-        },
-        {
-          "disabled": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "isDrawing",
-                "=",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "MouseButtonFromTextPressed"
-              },
-              "parameters": [
-                "",
-                "\"Left\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PrimitiveDrawing::Drawer::ClearShapes"
-              },
-              "parameters": [
-                "circlePreview"
-              ]
-            },
-            {
-              "type": {
-                "value": "PrimitiveDrawing::Circle"
-              },
-              "parameters": [
-                "circlePreview",
-                "startX",
-                "startY",
-                "DistanceBetweenPositions(Variable(startX), Variable(startY), CursorX(), CursorY())"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Event: Mouse Released"
-        },
-        {
-          "disabled": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "MouseButtonFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "\"Left\""
-              ]
-            },
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "isDrawing",
-                "=",
-                "1"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "isDrawing",
-                "=",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "PrimitiveDrawing::Drawer::ClearShapes"
-              },
-              "parameters": [
-                "circlePreview"
-              ]
-            }
-          ]
-        }
-      ],
-      "layers": [
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "camera2DPlaneMaxDrawingDistance": 5000,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "isLocked": false,
-          "name": "",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": [
-            {
-              "effectType": "Scene3D::HemisphereLight",
-              "name": "3D Ambient Hemisphere Light",
-              "doubleParameters": {
-                "elevation": 40,
-                "intensity": 0.33,
-                "rotation": 300
-              },
-              "stringParameters": {
-                "groundColor": "127;127;127",
-                "skyColor": "255;255;255",
-                "top": "Z+"
-              },
-              "booleanParameters": {}
-            },
-            {
-              "effectType": "Scene3D::DirectionalLight",
-              "name": "3D Sun Light",
-              "doubleParameters": {
-                "distanceFromCamera": 1500,
-                "elevation": 40,
-                "frustumSize": 4000,
-                "intensity": 0.75,
-                "minimumShadowBias": 0,
-                "rotation": 300
-              },
-              "stringParameters": {
-                "color": "255;255;255",
-                "shadowQuality": "medium",
-                "top": "Z+"
-              },
-              "booleanParameters": {
-                "isCastingShadow": true
-              }
-            }
-          ]
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "Animation",
-          "type": "AnimatableCapability::AnimatableBehavior"
-        },
-        {
-          "name": "Effect",
-          "type": "EffectCapability::EffectBehavior"
-        },
-        {
-          "name": "Flippable",
-          "type": "FlippableCapability::FlippableBehavior"
-        },
-        {
-          "name": "Opacity",
-          "type": "OpacityCapability::OpacityBehavior"
-        },
-        {
-          "name": "Resizable",
-          "type": "ResizableCapability::ResizableBehavior"
-        },
-        {
-          "name": "Scale",
-          "type": "ScalableCapability::ScalableBehavior"
-        },
-        {
-          "name": "Text",
-          "type": "TextContainerCapability::TextContainerBehavior"
         }
       ]
     }
