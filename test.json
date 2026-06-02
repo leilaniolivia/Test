@@ -224,17 +224,42 @@
         "userAdded": false
       },
       {
-<<<<<<< HEAD
         "file": "assets/NewSprite8.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite5",
-=======
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/blueBlob2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "blueBlob",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
         "file": "Green Rectangle Background.png",
         "kind": "image",
         "metadata": "",
         "name": "Green Rectangle Background.png",
->>>>>>> 306d11dbe20efad833d618427e96a77869a8302f
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Grey Rectangle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Grey Rectangle.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Image 6-2-26 at 12.06 AM.jpeg",
+        "kind": "image",
+        "metadata": "",
+        "name": "Image 6-2-26 at 12.06 AM.jpeg",
         "smoothed": true,
         "userAdded": false
       }
@@ -328,11 +353,12 @@
           "directions": [
             {
               "looping": false,
+              "metadata": "{\"pskl\":{}}",
               "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Blue_Blob_-removebg-preview.png",
+                  "image": "blueBlob",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -387,13 +413,8 @@
     {
       "b": 32,
       "disableInputWhenNotFocused": true,
-<<<<<<< Updated upstream
       "mangledName": "Creation",
       "name": "Creation",
-=======
-      "mangledName": "Game",
-      "name": "Game",
->>>>>>> Stashed changes
       "r": 1,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
@@ -428,18 +449,12 @@
           "name": "Blob",
           "persistentUuid": "85e56372-2814-4775-a646-baa2dda73bb9",
           "width": 0,
-<<<<<<< Updated upstream
           "x": 137,
           "y": 222,
-=======
-          "x": 323,
-          "y": 160,
->>>>>>> Stashed changes
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
-<<<<<<< Updated upstream
         },
         {
           "angle": 0,
@@ -472,7 +487,6 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
-<<<<<<< HEAD
         },
         {
           "angle": 0,
@@ -521,177 +535,11 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
-=======
-=======
->>>>>>> Stashed changes
-        }
-      ],
-      "objects": [
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-<<<<<<< Updated upstream
-          "name": "Blob",
-=======
-          "name": "Puple_Blob",
->>>>>>> Stashed changes
-          "persistentUuid": "b8647b6e-437c-466a-b6bf-3c27fffa7339",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "name": "size",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "colorId",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "speed",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "name": "direction",
-              "type": "number",
-              "value": 0
-            }
-          ],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "purpleBlob",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Purple_Blob_-removebg-preview",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 5,
-                            "y": 0
-                          },
-                          {
-                            "x": 258,
-                            "y": 0
-                          },
-                          {
-                            "x": 258,
-                            "y": 208
-                          },
-                          {
-                            "x": 5,
-                            "y": 208
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "blueBlob",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Blue_Blob_-removebg-preview.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 5,
-                            "y": 0
-                          },
-                          {
-                            "x": 258,
-                            "y": 0
-                          },
-                          {
-                            "x": 258,
-                            "y": 208
-                          },
-                          {
-                            "x": 5,
-                            "y": 208
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
->>>>>>> 306d11dbe20efad833d618427e96a77869a8302f
         }
       ],
       "objects": [],
       "objectsFolderStructure": {
-<<<<<<< HEAD
         "folderName": "__ROOT"
-=======
-        "folderName": "__ROOT",
-        "children": [
-          {
-<<<<<<< Updated upstream
-            "objectName": "Blob"
-=======
-            "objectName": "Puple_Blob"
-          },
-          {
-            "objectName": "Blue_Blob"
-          },
-          {
-            "objectName": "Green_Blob"
-          },
-          {
-            "objectName": "Orange_Blob"
-          },
-          {
-            "objectName": "Pink_Blob"
->>>>>>> Stashed changes
-          }
-        ]
->>>>>>> 306d11dbe20efad833d618427e96a77869a8302f
       },
       "events": [
         {
@@ -1310,13 +1158,8 @@
     {
       "b": 255,
       "disableInputWhenNotFocused": true,
-<<<<<<< Updated upstream
       "mangledName": "Every_32Level_32Frame",
       "name": "Every Level Frame",
-=======
-      "mangledName": "GameScene",
-      "name": "GameScene",
->>>>>>> Stashed changes
       "r": 247,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
@@ -1341,101 +1184,10 @@
       },
       "objectsGroups": [],
       "variables": [],
-<<<<<<< Updated upstream
       "instances": [],
       "objects": [],
       "objectsFolderStructure": {
         "folderName": "__ROOT"
-=======
-      "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 719,
-          "keepRatio": true,
-          "layer": "",
-          "name": "NewSprite",
-          "persistentUuid": "4a55385d-a212-436e-a46c-da975fe776ea",
-          "width": 1009,
-          "x": -5,
-          "y": 1,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        }
-      ],
-      "objects": [
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "NewSprite",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Green Rectangle Background.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 422,
-                            "y": 0
-                          },
-                          {
-                            "x": 422,
-                            "y": 337
-                          },
-                          {
-                            "x": 0,
-                            "y": 337
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "objectsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "objectName": "NewSprite"
-          }
-        ]
->>>>>>> Stashed changes
       },
       "events": [],
       "layers": [
@@ -1505,12 +1257,6 @@
           ]
         }
       ],
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
-      "behaviorsSharedData": []
-=======
->>>>>>> 306d11dbe20efad833d618427e96a77869a8302f
       "behaviorsSharedData": [
         {
           "name": "Animation",
@@ -1537,7 +1283,6 @@
           "type": "ScalableCapability::ScalableBehavior"
         }
       ]
-<<<<<<< HEAD
     },
     {
       "b": 255,
@@ -1973,13 +1718,25 @@
             },
             {
               "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "drawnCircle",
+                "Variable(startX)",
+                "Variable(startY)",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "ResizableCapability::ResizableBehavior::SetWidth"
               },
               "parameters": [
                 "drawnCircle",
                 "Resizable",
                 "=",
-                "DistanceBetweenPositions(\n  Variable(startX),\n  Variable(startY),\n  MouseX(\"Base Layer\",0),\n  MouseY(\"Base Layer\",0)\n) * 2"
+                "DistanceBetweenPositions(\n  Variable(startX),\n  Variable(startY),\n  MouseX(\"Base Layer\",0),\n  MouseY(\"Base Layer\",0)\n) * 4"
               ]
             },
             {
@@ -1990,19 +1747,7 @@
                 "drawnCircle",
                 "Resizable",
                 "=",
-                "DistanceBetweenPositions(\n  Variable(startX),\n  Variable(startY),\n  MouseX(\"Base Layer\",0),\n  MouseY(\"Base Layer\",0)\n) * 2"
-              ]
-            },
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "drawnCircle",
-                "Variable(startX)",
-                "Variable(startY)",
-                ""
+                "DistanceBetweenPositions(\n  Variable(startX),\n  Variable(startY),\n  MouseX(\"Base Layer\",0),\n  MouseY(\"Base Layer\",0)\n) * 4\n"
               ]
             }
           ]
@@ -2106,9 +1851,965 @@
           "type": "ScalableCapability::ScalableBehavior"
         }
       ]
-=======
->>>>>>> Stashed changes
->>>>>>> 306d11dbe20efad833d618427e96a77869a8302f
+    },
+    {
+      "b": 255,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "GameScene",
+      "name": "GameScene",
+      "r": 247,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 249,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridDepth": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridOffsetZ": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.4950840073748888,
+        "windowMask": false,
+        "selectedLayer": "",
+        "gameEditorMode": "instances-editor"
+      },
+      "objectsGroups": [],
+      "variables": [
+        {
+          "name": "isDrawing",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "startX",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "startY",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "endX",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "endY",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "radius",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "groupIndex",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "dashCount",
+          "type": "number",
+          "value": 24
+        }
+      ],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 721,
+          "keepRatio": true,
+          "layer": "",
+          "name": "FieldBackground",
+          "persistentUuid": "d96335bc-d075-4c39-bf10-5d2c33c5f2bb",
+          "width": 928,
+          "x": 2,
+          "y": -1,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 720,
+          "keepRatio": true,
+          "layer": "",
+          "name": "RightPanel",
+          "persistentUuid": "add671ee-5aad-4d53-a562-2c9397ad5a8f",
+          "width": 353,
+          "x": 927,
+          "y": 0,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "TimerText",
+          "persistentUuid": "dfb94ce0-08d4-4658-9a5a-e63b79faaa3e",
+          "width": 0,
+          "x": 27,
+          "y": 21,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "ScoreText",
+          "persistentUuid": "f031e808-336e-4414-827d-a26c92b103b8",
+          "width": 0,
+          "x": 350,
+          "y": 20,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "LevelText",
+          "persistentUuid": "3ac3d34d-a332-43a1-b211-b86e66bc832d",
+          "width": 0,
+          "x": 606,
+          "y": 24,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "AttributesText",
+          "persistentUuid": "f9688b40-a0d0-4479-8c71-f57f81b854e2",
+          "width": 0,
+          "x": 944,
+          "y": 15,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "GroupsText",
+          "persistentUuid": "484350a1-87fd-4710-9de2-df9a8b9e4433",
+          "width": 0,
+          "x": 944,
+          "y": 156,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "UngroupedText",
+          "persistentUuid": "c4898742-ccde-42d1-b2c7-c9052e1e6db0",
+          "width": 0,
+          "x": 944,
+          "y": 195,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 71,
+          "keepRatio": true,
+          "layer": "",
+          "name": "PromptBar",
+          "persistentUuid": "62de0c10-9739-416a-8e9c-e360a8d10784",
+          "width": 924,
+          "x": 3,
+          "y": 648,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "PromptText",
+          "persistentUuid": "7237a536-8a9d-4252-a85b-8eeec6d9e1e8",
+          "width": 0,
+          "x": 16,
+          "y": 669,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "circlePreview",
+          "persistentUuid": "938cf2b3-363a-4a11-a641-7a7d6393b905",
+          "width": 0,
+          "x": 620,
+          "y": 320,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "FieldBackground",
+          "persistentUuid": "9a8aa455-4a35-4fb6-a6b2-d81f3bf7f5cb",
+          "rightMargin": 0,
+          "texture": "Green Rectangle Background.png",
+          "tiled": false,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "RightPanel",
+          "persistentUuid": "617554f9-a66c-46c8-9bd7-5dd7917feac5",
+          "rightMargin": 0,
+          "texture": "Grey Rectangle.png",
+          "tiled": false,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "TimerText",
+          "persistentUuid": "46955eaa-5023-4501-9ba2-f1c1e95ef82e",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Time: 60",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Time: 60",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "ScoreText",
+          "persistentUuid": "fdfab094-7643-47f3-a5ab-0396a106a909",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Score: 0",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Score: 0",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "LevelText",
+          "persistentUuid": "2fcda970-63fa-429f-84e6-b5428e51bad1",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Level: 1",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Level: 1",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "AttributesText",
+          "persistentUuid": "933c690b-ec21-463d-b8e2-ba057a871173",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Attributes\n\nSize:\nColor:\nSpeed:",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Attributes\n\nSize:\nColor:\nSpeed:",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "GroupsText",
+          "persistentUuid": "e561ca01-e7ea-4ad2-99e1-689bec4a1712",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Groups Found: 0",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Groups Found: 0",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "UngroupedText",
+          "persistentUuid": "4d774dc9-9912-4bef-8e39-0e3bef434d90",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Ungrouped Blobs: 8",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Ungrouped Blobs: 8",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "PromptBar",
+          "persistentUuid": "174e322a-5698-4af2-92e0-c1bff5c86c7c",
+          "rightMargin": 0,
+          "texture": "Image 6-2-26 at 12.06 AM.jpeg",
+          "tiled": false,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "PromptText",
+          "persistentUuid": "c4d7d748-09bd-46af-b638-d79cf0a09520",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Find and group blobs with matching attributes!",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Find and group blobs with matching attributes!",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 20,
+            "lineHeight": 0,
+            "color": "255;255;255"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "circlePreview",
+          "persistentUuid": "a2d6f316-576d-46e7-8458-3c8e7eba65ba",
+          "type": "PrimitiveDrawing::Drawer",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "fillOpacity": 255,
+          "outlineSize": 1,
+          "outlineOpacity": 255,
+          "absoluteCoordinates": false,
+          "clearBetweenFrames": true,
+          "antialiasing": "none",
+          "fillColor": {
+            "r": 255,
+            "g": 255,
+            "b": 255
+          },
+          "outlineColor": {
+            "r": 0,
+            "g": 0,
+            "b": 0
+          }
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "FieldBackground"
+          },
+          {
+            "objectName": "PromptBar"
+          },
+          {
+            "objectName": "RightPanel"
+          },
+          {
+            "objectName": "TimerText"
+          },
+          {
+            "objectName": "ScoreText"
+          },
+          {
+            "objectName": "LevelText"
+          },
+          {
+            "objectName": "AttributesText"
+          },
+          {
+            "objectName": "GroupsText"
+          },
+          {
+            "objectName": "UngroupedText"
+          },
+          {
+            "objectName": "PromptText"
+          },
+          {
+            "objectName": "circlePreview"
+          }
+        ]
+      },
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Event Title: Circle Drawing"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "isDrawing",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "startX",
+                    "=",
+                    "CursorX()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "startY",
+                    "=",
+                    "CursorY()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PrimitiveDrawing::Drawer::ClearShapes"
+                  },
+                  "parameters": [
+                    "circlePreview"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Event Title: Mouse Held"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "isDrawing",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PrimitiveDrawing::Drawer::ClearShapes"
+              },
+              "parameters": [
+                "circlePreview"
+              ]
+            },
+            {
+              "type": {
+                "value": "PrimitiveDrawing::Circle"
+              },
+              "parameters": [
+                "circlePreview",
+                "startX",
+                "startY",
+                "DistanceBetweenPositions(Variable(startX), Variable(startY), CursorX(), CursorY())"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": ""
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "isDrawing",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "isDrawing",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "PrimitiveDrawing::Drawer::ClearShapes"
+              },
+              "parameters": [
+                "circlePreview"
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
+        }
+      ]
     }
   ],
   "externalEvents": [],
