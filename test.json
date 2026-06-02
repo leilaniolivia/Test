@@ -1517,8 +1517,60 @@
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": " Harmony Score calculator",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Blob",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "DistanceBetweenPositions(\n    Blob.X(),\n    Blob.Y(),\n    Variable(startX),\n    Variable(startY))",
+                "<=",
+                "Variable(radius)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringObjectVariable"
+              },
+              "parameters": [
+                "Blob",
+                "inGroup",
+                "=",
+                "\"1\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Blob",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::CompareNumbers"
+              },
+              "parameters": [
+                "DistanceBetweenPositions(\n Blob.X(),\n Blob.Y(),\n Variable(startX),\n Variable(startY)\n)",
+                ">",
+                "Variable(radius)"
+              ]
+            }
+          ],
           "actions": []
         }
       ],
