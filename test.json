@@ -210,7 +210,7 @@
       {
         "file": "Pink_Blob_-removebg-preview.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"Pink_Blob_-removebg-preview.png\",\"extension\":\".png\"}",
         "name": "Pink_Blob_-removebg-preview.png",
         "smoothed": true,
         "userAdded": false
@@ -234,7 +234,7 @@
       {
         "file": "assets/blueBlob2.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/blueBlob2.png\"}",
         "name": "blueBlob",
         "smoothed": true,
         "userAdded": false
@@ -260,6 +260,30 @@
         "kind": "image",
         "metadata": "",
         "name": "Image 6-2-26 at 12.06 AM.jpeg",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/greenBlob2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "greenBlob",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/pinkBlob2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "pinkBlob",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/orangeBlob2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "orangeBlob",
         "smoothed": true,
         "userAdded": false
       }
@@ -359,6 +383,153 @@
                 {
                   "hasCustomCollisionMask": true,
                   "image": "blueBlob",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 0
+                      },
+                      {
+                        "x": 258,
+                        "y": 0
+                      },
+                      {
+                        "x": 258,
+                        "y": 208
+                      },
+                      {
+                        "x": 5,
+                        "y": 208
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "greenBlob",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "greenBlob",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 0
+                      },
+                      {
+                        "x": 258,
+                        "y": 0
+                      },
+                      {
+                        "x": 258,
+                        "y": 208
+                      },
+                      {
+                        "x": 5,
+                        "y": 208
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "pinkBlob",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "pinkBlob",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 0
+                      },
+                      {
+                        "x": 258,
+                        "y": 0
+                      },
+                      {
+                        "x": 258,
+                        "y": 208
+                      },
+                      {
+                        "x": 5,
+                        "y": 208
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "orangeBlob",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "orangeBlob",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2541,6 +2712,7 @@
           "comment": "Event Title: Circle Drawing"
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2621,6 +2793,7 @@
           "comment": "Event Title: Mouse Held"
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2631,6 +2804,15 @@
                 "isDrawing",
                 "=",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
               ]
             }
           ],
@@ -2666,14 +2848,15 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": ""
+          "comment": "Event: Mouse Released"
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "MouseButtonFromTextPressed"
+                "value": "MouseButtonFromTextReleased"
               },
               "parameters": [
                 "",
